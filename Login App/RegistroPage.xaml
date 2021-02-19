@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login_App.RegistroPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="MasterLayout">
+
+            <StackLayout x:Name="LogoLayout"/>
+            <Image x:Name="RegistroLogo" Source="logoIntec.jpg" WidthRequest="150" HeightRequest="150"/>
+
+            <StackLayout x:Name="RegistroInputs" VerticalOptions="StartAndExpand">
+                <StackLayout.Padding>
+                    <OnIdiom x:TypeArguments="Thickness">
+                        <OnIdiom.Phone>40,0,40,40</OnIdiom.Phone>
+                        <OnIdiom.Tablet>40,0,40,0</OnIdiom.Tablet>
+                    </OnIdiom>
+                </StackLayout.Padding>
+
+                <Label x:Name="LB3" Text="Name"/>
+                <Entry x:Name="E3" Placeholder="Name"/>
+                <Label x:Name="LB4" Text="Email"/>
+                <Entry x:Name="E4" Placeholder="Email"/>
+                <Label x:Name="LB5" Text="Password"/>
+                <Entry x:Name="E5" Placeholder="Password" IsPassword="true"/>
+                <Label x:Name="LB6" Text="Confirm Password"/>
+                <Entry x:Name="E6" Placeholder="Confirm Password" IsPassword="true"/>
+                <Button x:Name="BT3" Text="Registrar" Clicked="RegistrarClicked" Background="Red" TextColor="GhostWhite"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
