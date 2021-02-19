@@ -33,7 +33,7 @@ Xamarin App with LoginPage, SignUpPage and a MasterDetail Homepage.
 </p>
 
 <p>
- Once all the fields are filled correctly and the user click the button, the app shows a DisplayAlert welcoming the user while displaying the homepage. The homepage is a MasterDetail page. It also have a UI made with the Grid Layout. 
+ Once all the fields are filled correctly and the user click the button, the app shows a DisplayAlert welcoming the user while displaying the homepage. The homepage is a MasterDetail page. It also has a UI made with the Grid Layout. 
 </p>
 <p align="center">
  <img width="300" height:"300" src="App Screenshots/8.jpg" title="Captura 8"/>
