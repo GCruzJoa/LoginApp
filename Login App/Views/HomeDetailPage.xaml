@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login_App.Views.HomeDetailPage"
+             Title="Home">
+
+    <Grid RowSpacing="10" ColumnSpacing="10" Margin="20" VerticalOptions="CenterAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180"/>
+            <ColumnDefinition Width="180"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Featured course" Grid.Column="0" Grid.Row="0" HeightRequest="5"/>
+        <ImageButton BackgroundColor="White" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Source="xamarin.jpg" />
+        <Label Text="On the go" Grid.Column="0" Grid.Row="2" HeightRequest="5" VerticalOptions="Fill"/>
+        <Button BackgroundColor="DarkSeaGreen" Grid.Column="0" Grid.Row="3" Text="After work" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Button BackgroundColor="DeepSkyBlue" Grid.Column="1" Grid.Row="3" Text="Tough day" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Button BackgroundColor="OrangeRed" Grid.Column="0" Grid.Row="4" Text="Good morning" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Button BackgroundColor="LightGray" Grid.Column="1" Grid.Row="4" Text="Sleep" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Button BackgroundColor="LemonChiffon" Grid.Column="0" Grid.Row="5" Text="Quick break" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Button BackgroundColor="LightCoral" Grid.Column="1" Grid.Row="5" Text="Big event" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+    </Grid>
+
+    
+
+</ContentPage>
