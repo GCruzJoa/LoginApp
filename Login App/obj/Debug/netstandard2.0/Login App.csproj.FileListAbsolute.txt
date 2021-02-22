@@ -1,0 +1,18 @@
+C:\Users\kafay\source\repos\Login App\Login App\bin\Debug\netstandard2.0\Login App.deps.json
+C:\Users\kafay\source\repos\Login App\Login App\bin\Debug\netstandard2.0\Login App.dll
+C:\Users\kafay\source\repos\Login App\Login App\bin\Debug\netstandard2.0\ref\Login App.dll
+C:\Users\kafay\source\repos\Login App\Login App\bin\Debug\netstandard2.0\Login App.pdb
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\Login App.csprojAssemblyReference.cache
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\Login App.AssemblyInfoInputs.cache
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\Login App.AssemblyInfo.cs
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\Login App.csproj.CoreCompileInputs.cache
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\Login App.dll
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\ref\Login App.dll
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\Login App.pdb
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\Views\HomeDetailPage.xaml.g.cs
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\Views\HomeMasterPage.xaml.g.cs
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\kafay\source\repos\Login App\Login App\obj\Debug\netstandard2.0\Views\SignUpPage.xaml.g.cs
