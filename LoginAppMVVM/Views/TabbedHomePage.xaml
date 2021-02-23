@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Login_App.Views"
+            x:Class="Login_App.Views.TabbedHomePage"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="{Binding HomeMenuOption.Title}" IconImageSource="{Binding HomeMenuOption.Image}" />
+    <ContentPage Title="{Binding DiscoveryMenuOption.Title}" IconImageSource="{Binding DiscoveryMenuOption.Image}">
+        <ScrollView>
+            <Grid RowSpacing="20" ColumnSpacing="10" Margin="10" HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="170"/>
+                    <RowDefinition Height="170"/>
+                    <RowDefinition Height="170"/>
+                    <RowDefinition Height="170"/>
+                    <RowDefinition Height="170"/>
+                    <RowDefinition Height="170"/>                    
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Discovery" Grid.ColumnSpan="2" Grid.Row="0" 
+                       TextColor="Black" FontSize="25" FontAttributes="Bold" 
+                       HorizontalTextAlignment="Center">
+                </Label>
+                
+                <StackLayout Grid.Column="0" Grid.Row="1" VerticalOptions="Fill" BackgroundColor="White">
+                    <ImageButton Source="{Binding BarAndHotelsMenuOption.Image}" BackgroundColor="White" WidthRequest="150" HeightRequest="130" HorizontalOptions="Center"/>
+                    <Label Text="{Binding BarAndHotelsMenuOption.Title}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>                    
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" Grid.Row="1" VerticalOptions="Fill" BackgroundColor="White">
+                    <ImageButton Source="{Binding FineDiningMenuOption.Image}" BackgroundColor="White" WidthRequest="150" HeightRequest="130" HorizontalOptions="Center"/>
+                    <Label Text="{Binding FineDiningMenuOption.Title}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="2" VerticalOptions="Fill" BackgroundColor="White">
+                    <ImageButton Source="{Binding CafesMenuOption.Image}" BackgroundColor="White" WidthRequest="150" HeightRequest="130" HorizontalOptions="Center"/>
+                    <Label Text="{Binding CafesMenuOption.Title}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" Grid.Row="2" VerticalOptions="Fill" BackgroundColor="Yellow">
+                    <ImageButton Source="{Binding NearbyMenuOption.Image}" BackgroundColor="Yellow" WidthRequest="150" HeightRequest="130" HorizontalOptions="Center"/>
+                    <Label Text="{Binding NearbyMenuOption.Title}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="3" VerticalOptions="Fill" BackgroundColor="White">
+                    <ImageButton Source="{Binding FastFoodsMenuOption.Image}" BackgroundColor="White" WidthRequest="150" HeightRequest="130" HorizontalOptions="Center"/>
+                    <Label Text="{Binding FastFoodsMenuOption.Title}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" Grid.Row="3" VerticalOptions="Fill" BackgroundColor="White">
+                    <ImageButton Source="{Binding FeaturedFoodsMenuOption.Image}" BackgroundColor="White" WidthRequest="150" HeightRequest="130" HorizontalOptions="Center"/>
+                    <Label Text="{Binding FeaturedFoodsMenuOption.Title}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage>
+    <ContentPage Title="{Binding BookmarkMenuOption.Title}" IconImageSource="{Binding BookmarkMenuOption.Image}"/>
+    <ContentPage Title="{Binding TopFoodMenuOption.Title}" IconImageSource="{Binding TopFoodMenuOption.Image}"/>
+    <ContentPage Title="{Binding ProfileMenuOption.Title}" IconImageSource="{Binding ProfileMenuOption.Image}"/>
+</TabbedPage>
