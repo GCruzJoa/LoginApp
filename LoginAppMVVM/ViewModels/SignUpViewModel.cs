@@ -35,7 +35,7 @@ namespace Login_App.ViewModels
                 await App.Current.MainPage.Navigation.PushModalAsync(new TabbedHomePage());
             }
         }
-        public bool CheckInfoSignUp()
+        private bool CheckInfoSignUp()
         {
             if (string.IsNullOrEmpty(NameSignUp) || string.IsNullOrEmpty(EmailSignUp) || string.IsNullOrEmpty(PasswordSignUp))
                 return true;
