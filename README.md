@@ -1,8 +1,8 @@
 # LoginApp
-Xamarin App with LoginPage, SignUpPage and a Tabbed Homepage. Refactorized version of the project with the use of the MVVM pattern.
+Xamarin App with LoginPage, SignUpPage and a Tabbed Homepage. Refactored version of the project with the use of the MVVM pattern.
 
 <p>
-Refactorized LoginPage and SignUpPage.
+Refactored LoginPage and SignUpPage.
 </p>
 <p align="center">
  <img width="300" height:"300" src="MVVM App Screenshots/1.jpg" title="Captura 1"/>
