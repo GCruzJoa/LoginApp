@@ -10,34 +10,33 @@ namespace Login_App.ViewModels
     class SignUpViewModel
     {
         public ICommand OnSignUpCommand { get; }
-        public string NameSignUp { get; set; }
-        public string EmailSignUp { get; set; }
-        public string PasswordSignUp { get; set; }
-        public string ConfirmPassSignUp { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string ConfirmPassword { get; set; }
         public SignUpViewModel()
         {
             OnSignUpCommand = new Command(OnSignUpTapped);
         }
-
         private async void OnSignUpTapped()
         {
             if (CheckInfoSignUp())
             {
                 await App.Current.MainPage.DisplayAlert("Alerta", "Debe completar todos los campos", "Cerrar");
             }
-            if (PasswordSignUp != ConfirmPassSignUp)
+            if (Password != ConfirmPassword)
             {
                 await App.Current.MainPage.DisplayAlert("Alerta", "Las contraseñas deben ser iguales", "Cerrar");
             }
-            if (!CheckInfoSignUp() && PasswordSignUp == ConfirmPassSignUp)
+            if (!CheckInfoSignUp() && Password == ConfirmPassword)
             {
-                await App.Current.MainPage.DisplayAlert("Bienvenido", "Hola " + NameSignUp, "Cerrar");
+                await App.Current.MainPage.DisplayAlert("Bienvenido", "Hola " + Name, "Cerrar");
                 await App.Current.MainPage.Navigation.PushModalAsync(new TabbedHomePage());
             }
         }
         private bool CheckInfoSignUp()
         {
-            if (string.IsNullOrEmpty(NameSignUp) || string.IsNullOrEmpty(EmailSignUp) || string.IsNullOrEmpty(PasswordSignUp))
+            if (string.IsNullOrEmpty(Name) || string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
                 return true;
             else return false;
         }
